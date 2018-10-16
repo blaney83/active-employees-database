@@ -1,0 +1,27 @@
+
+.table {
+    border-style: solid;
+    border-width: 2px;
+    border-color:darkslategray;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.lead{
+    font-size: 24px;
+}
+.header{
+    margin: auto;
+}
+
+form{
+    border-style: solid;
+    border-width: 2px;
+    border-color:darkslategray;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#name-input{
+    width: 100%
+}

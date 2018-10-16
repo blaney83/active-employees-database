@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time Sheet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+</head>
+
+<body>
+    <header class="header col-10">
+        <!-- jumbotron comp -->
+        <div class="jumbotron text-center bg-dark text-white">
+            <h1 class="display-4">Employee Data Management</h1>
+            <p class="lead">A Comprehensive Directory of Employee Billable Hours</p>
+            <!-- <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+            <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-12" id="currentEmployees">
+                    <!-- current employees section -->
+                </div>
+                <div class="col-12" id="addEmployees">
+                    <!-- add employees section -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-12" id="currentEmployees">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Employee Name</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Start Date</th>
+                                <th scope="col">Months Worked</th>
+                                <th scope="col">Monthly Rate ($)</th>
+                                <th scope="col">Total Billed ($)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="appendHere">
+                            <tr>
+                                <td>Ben</th>
+                                <td>Code</td>
+                                <td>August</td>
+                                <td>Two</td>
+                                <td>Free Thirty</td>
+                                <td>-$tuition</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12" id="addEmployees">
+                    <form class="col-lg-12" action="/action_page.php" method="post">
+                        Name
+                        <input class="col-lg-12" type="text" name="fname" id="name-input">
+                        Role
+                        <input class="col-lg-12" type="text" name="fname" id="role-input">
+                        Start Date (MM/DD/YYYY)
+                        <input class="col-lg-12" type="text" name="fname" id="date-input">
+                        Monthly Rate
+                        <input class="col-lg-12" type="text" name="fname" id="rate-input">
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
